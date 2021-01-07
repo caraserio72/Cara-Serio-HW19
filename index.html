@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="CSS/style-sheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="JS/index.js"></script>
 </head>
 <body>
 <header class="navigation">
 <div class="inline-block-1">
+    <a href="index.html">
     <img src="Images/CAS LOGO.png" alt="CAS Integrated Brand Consulting Logo" class="logo">
+    </a>
 </div>
 <nav class="inline-block-2">
-        <button class="primary-nav">ABOUT ME</button>
-        <button class="primary-nav">MY SKILLS</button>
-        <button class="primary-nav">MY WORK</button>
-        <button class="primary-nav">CONTACT ME</button>
+        <button class="primary-nav" target="_blank"><a href="aboutme.html">ABOUT ME</a></button>
+        <button class="primary-nav"target="_blank"> <a href="myskills.html">MY SKILLS</a></button>
+        <button class="primary-nav"><a href="mywork.html">MY WORK</a></button>
+        <button class="primary-nav"><a href="contactme.html">CONTACT ME</a></button>
 </nav>
 </header>
 <br>
@@ -27,9 +28,13 @@
         <img src="Images/CaraHeadshot.jpg" alt="Cara Serio Headshot" id="headshot">
     </div>
     <div class="leftsidebarbottom">
-        <p id="homepage-email">email: caraserio72@gmail.com</p>
-        <img src="images/Linked-In Icon.png" alt="Cara Serio LinkedIn Page" id="widget">
-        <img src="images/github-icon-1 1.png" alt="Cara Serio LinkedIn Page" id="widget">
+        <a href="mailto:caraserio72@gmail.com">
+            <p id="homepage-email">email: caraserio72@gmail.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/caraserio/">
+            <img src="images/Linked-In Icon.png" alt="Cara Serio LinkedIn Page" id="widget">
+        </a>
+        <img src="images/github-icon-1 1.png" alt="Cara Serio github Page" id="widget">
     </div>
     <div class="middlecolumnrow1">
         <h1>EVENT <br>
@@ -63,10 +68,21 @@
 </section>
 <br>
 <footer>
-        <button class="primary-nav">ABOUT ME</button>
-        <button class="primary-nav">MY SKILLS</button>
-        <button class="primary-nav">MY WORK</button>
-        <button class="primary-nav">CONTACT ME</button>
+    <button class="primary-nav" target="_blank"><a href="aboutme.html">ABOUT ME</a></button>
+    <button class="primary-nav"target="_blank"> <a href="myskills.html">MY SKILLS</a></button>
+    <button class="primary-nav"><a href="mywork.html">MY WORK</a></button>
+    <button class="primary-nav"><a href="contactme.html">CONTACT ME</a></button>
 </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9JYLXDXML6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9JYLXDXML6');
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="JS/index.js"></script>
 </body>
 </html>

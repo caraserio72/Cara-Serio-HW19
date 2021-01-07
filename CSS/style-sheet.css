@@ -13,7 +13,7 @@ h2{
     font-weight:200;
 }
 h3{
-    font-size:.67em;
+    font-size:18px;
     font-weight:400;
 }
 h4{
@@ -38,6 +38,7 @@ h4{
     display:inline-block;
     vertical-align:top;
     margin:2px;
+
 }
 .logo{
     width:100px;
@@ -47,10 +48,10 @@ h4{
 .inline-block-2{
     display:flex;
     flex-direction:row;
-    align-items:center;
+    align-items:flex-start;
     justify-content: flex-end;
-    width:75%;
-    padding:1%;
+    width:65.5%;
+    padding:0px;
     position:absolute;
     Bottom:0px;
     Right:5px;
@@ -58,13 +59,42 @@ h4{
 }
 .primary-nav{
     width:25%;
-    margin:1px;
-    padding:1px;
+    height:50px;
+    margin:0px;
+    padding:0px;
     background-color: #062559;
     color: #ffffff;
+    font-size: 18px;
     text-align:center;
     text-decoration:none;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #ffffff;
 }
+
+/* Unvisited Link  */
+a:link{
+    color:#ffffff;
+    text-decoration: none;
+}
+/* Visited Link */
+a:visited {
+    color:#ffffff;
+    text-decoration: none;
+  }  
+  /* Mouse over link */
+  /* a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight:bolder;
+  } */
+  /* current active link */
+  /* a:active{
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight:bolder;
+  } */
+
 .sitecontentgridlayout{
    width:90vw;
    display:grid;
@@ -207,7 +237,7 @@ h4{
     font-size:24px;
     font-weight: bold;
 }
-    #widget{
+#widget{
     width:50px;
     padding:5px;
 }
@@ -221,6 +251,7 @@ footer{
     padding: 10px 10px 10px 10px;
 }
 
+/* media queries below this line */
 @media only screen and (max-width:600px){
     .sitecontentgridlayout{
         width:90vw;
@@ -268,4 +299,3 @@ footer{
          grid-gap:10px;
          padding:10px;
      }
-}
